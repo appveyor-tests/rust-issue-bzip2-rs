@@ -3,9 +3,6 @@ image: Visual Studio 2015
 environment:
   RUSTUP_USE_HYPER: 1
   
-init:
-- ps: Disable-NetFirewallRule -DisplayName 'Core Networking - Group Policy (LSASS-Out)'
-  
 install:
   # Download and instal rustup, the CLI tool form https://rustup.rs
   - appveyor DownloadFile https://win.rustup.rs/ -FileName rustup-init.exe
