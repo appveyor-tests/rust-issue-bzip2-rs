@@ -5,3 +5,4 @@ cmd /c rustup-init.exe -y
 $env:path = $env:path + ";C:\Users\appveyor\.cargo\bin"
 echo 'cargo build'
 cmd /c cargo build
+if($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
