@@ -3,10 +3,6 @@ image: Visual Studio 2015
 environment:
   RUSTUP_USE_HYPER: 1
 
-init:
-- dir /s %USERPROFILE%\.cargo
-- rd /q /s %USERPROFILE%\.multirust
-
 install:
   # Download and instal rustup, the CLI tool form https://rustup.rs
   - appveyor DownloadFile https://win.rustup.rs/ -FileName rustup-init.exe
