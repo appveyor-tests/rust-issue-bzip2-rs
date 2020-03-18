@@ -4,6 +4,7 @@ environment:
   RUSTUP_USE_HYPER: 1
 
 init:
+- dir /s %USERPROFILE%\.cargo
 - rd /q /s %USERPROFILE%\.multirust
 
 install:
