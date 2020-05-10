@@ -14,4 +14,5 @@ build: false
 test_script:
   - echo %PATH%
   - dir C:\Users\appveyor\.cargo\bin
+  - where cargo
   - cargo build
