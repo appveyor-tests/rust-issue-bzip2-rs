@@ -12,4 +12,5 @@ install:
 build: false
 
 test_script:
+  - echo %PATH%
   - cargo build
